@@ -26,8 +26,8 @@ HIVE下
   -- varchar -> timestamp，格式为yyyy-MM-dd
 ```
 补充知识，hive里varchar等其他格式转换成时间格式。
-1. 转换成时间戳 'unix_timestamp('201910', 'yyyyMM')'
-2. 将时间戳转成标准时间格式 'from_unixtime(unix_timestamp('201910', 'yyyyMM'), 'yyyy-MM-dd HH:mm:ss')'
+1. 转换成时间戳 `unix_timestamp('201910', 'yyyyMM')`
+2. 将时间戳转成标准时间格式 `from_unixtime(unix_timestamp('201910', 'yyyyMM'), 'yyyy-MM-dd HH:mm:ss')`
 
 扫盲时间：
 1. sysdate(0)是string-varchar。
@@ -41,7 +41,7 @@ HIVE下
 | Hive   | add_months/days/years(x,y) |
 | Presto | 直接与interval做加减       |
 
-'now() - interval '1' MONTH'
+`now() - interval '1' MONTH`
 
 ### 返回首天
 
